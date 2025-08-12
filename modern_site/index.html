@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聚合API服务平台 · 下一代开发者接口中心</title>
+  <meta name="description" content="下一代聚合API平台，提供AI、图像、数据、工具等高可用接口。采用现代化U设计趋势，分层视觉、动态动效与响应式布局。" />
+  <meta name="theme-color" content="#3B82F6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%233B82F6'/%3E%3Cstop stop-color='%2306B6D4' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='64' cy='64' r='60' fill='url(%23g)'/%3E%3Cpath d='M38 72l18 18 34-52' stroke='white' stroke-width='12' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">聚合API服务平台</span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="primary-menu" class="menu">
+          <li><a href="#features">特性</a></li>
+          <li><a href="#apis">接口</a></li>
+          <li><a href="#pricing">价格</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn ghost" href="#docs"><i class="fa-solid fa-book"></i><span>文档</span></a>
+        <a class="btn primary" href="#start"><i class="fa-solid fa-rocket"></i><span>立即接入</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 英雄区：分层+动态背景 -->
+  <section id="home" class="hero">
+    <!-- 渐变网格背景 -->
+    <div class="mesh-bg" aria-hidden="true"></div>
+    <!-- 浮动层叠圆形 -->
+    <div class="blob blob-a" aria-hidden="true"></div>
+    <div class="blob blob-b" aria-hidden="true"></div>
+    <div class="blob blob-c" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy" data-reveal="up">
+        <h1>
+          下一代 <span class="grad-text">聚合API</span> 平台<br />
+          更快、更稳、更易用
+        </h1>
+        <p class="lead">
+          覆盖 AI/图像/数据/工具 等数十类接口，采用现代 U 设计趋势，
+          通过分层视觉与动态动效，为开发者带来愉悦的使用体验。
+        </p>
+        <div class="cta">
+          <a class="btn primary xl" href="#start"><i class="fa-solid fa-plug"></i><span>免费创建密钥</span></a>
+          <a class="btn white xl" href="#docs"><i class="fa-solid fa-book-open"></i><span>查看集成文档</span></a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta"><strong>99.95%</strong><span>服务可用性</span></div>
+          <div class="meta"><strong>200ms</strong><span>平均响应</span></div>
+          <div class="meta"><strong>100+</strong><span>可用接口</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal="fade">
+        <!-- 玻璃拟态主卡片 -->
+        <div class="glass card main" data-tilt>
+          <div class="card-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <pre class="code"><code>// 初始化客户端
+const client = new API({ key: "sk_live_xxx" })
+
+// 发送AI对话
+const rsp = await client.ai.chat({
+  model: "gpt-4o-mini",
+  messages: [{ role: "user", content: "你好" }]
+})
+
+console.log(rsp.data)
+          </code></pre>
+        </div>
+        <!-- 浮层徽章卡片 -->
+        <div class="glass badge one" data-parallax>
+          <i class="fa-solid fa-bolt"></i> 极速响应
+        </div>
+        <div class="glass badge two" data-parallax>
+          <i class="fa-solid fa-shield"></i> 企业级安全
+        </div>
+        <div class="glass badge three" data-parallax>
+          <i class="fa-solid fa-puzzle-piece"></i> 一键集成
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特性区 -->
+  <section id="features" class="section features">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-reveal="up">为开发者而生的强大能力</h2>
+        <p class="sub" data-reveal="up">
+          轻松集成，稳定可靠，面向高并发与严苛业务场景。
+        </p>
+      </div>
+      <div class="grid features-grid">
+        <div class="feature" data-tilt data-reveal="fade">
+          <div class="icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>AI 智能</h3>
+          <p>对话、生成、Embedding、语音与视觉理解，持续接入前沿模型。</p>
+        </div>
+        <div class="feature" data-tilt data-reveal="fade">
+          <div class="icon"><i class="fa-solid fa-image"></i></div>
+          <h3>图像处理</h3>
+          <p>识别、OCR、抠图、修复与生成，满足多种创作与业务需求。</p>
+        </div>
+        <div class="feature" data-tilt data-reveal="fade">
+          <div class="icon"><i class="fa-solid fa-database"></i></div>
+          <h3>数据接口</h3>
+          <p>天气、资讯、金融、地理等可靠数据源，实时稳定更新。</p>
+        </div>
+        <div class="feature" data-tilt data-reveal="fade">
+          <div class="icon"><i class="fa-solid fa-lock"></i></div>
+          <h3>安全与合规</h3>
+          <p>严格鉴权、细粒度密钥、审计日志与速率限制，守护数据安全。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 接口展示（横向滚动/分层卡片） -->
+  <section id="apis" class="section apis">
+    <div class="container">
+      <div class="section-head compact">
+        <h2 data-reveal="up">热门接口精选</h2>
+        <p class="sub" data-reveal="up">开箱即用，统一风格与鉴权方式。</p>
+      </div>
+
+      <div class="api-scroller" data-reveal="fade">
+        <article class="api-card" data-tilt>
+          <div class="api-top">
+            <span class="pill">AI</span>
+            <span class="ver">v2</span>
+          </div>
+          <h3>Chat 对话</h3>
+          <p>统一 OpenAI/Claude/国产大模型接口，自动重试与回退。</p>
+          <code class="mini">POST /v1/ai/chat</code>
+        </article>
+
+        <article class="api-card" data-tilt>
+          <div class="api-top">
+            <span class="pill">图像</span>
+            <span class="ver">v1</span>
+          </div>
+          <h3>OCR 文字识别</h3>
+          <p>多语种高精度识别，图片与PDF皆可。</p>
+          <code class="mini">POST /v1/vision/ocr</code>
+        </article>
+
+        <article class="api-card" data-tilt>
+          <div class="api-top">
+            <span class="pill">工具</span>
+            <span class="ver">v1</span>
+          </div>
+          <h3>短链接生成</h3>
+          <p>一键生成可追踪短链接，含过期与配额控制。</p>
+          <code class="mini">POST /v1/utils/shorten</code>
+        </article>
+
+        <article class="api-card" data-tilt>
+          <div class="api-top">
+            <span class="pill">数据</span>
+            <span class="ver">v3</span>
+          </div>
+          <h3>金融行情</h3>
+          <p>毫秒级实时推送，覆盖主流市场与指标。</p>
+          <code class="mini">GET /v3/data/quotes</code>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 价格区（年付/月付切换） -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-reveal="up">灵活透明的价格</h2>
+        <p class="sub" data-reveal="up">按需选择，随时升级。支持年付优惠。</p>
+      </div>
+
+      <div class="plan-toggle" data-reveal="fade">
+        <span>月付</span>
+        <label class="switch">
+          <input id="billingToggle" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <span>年付 <em class="off">-20%</em></span>
+      </div>
+
+      <div class="grid plan-grid" data-reveal="fade">
+        <div class="plan">
+          <h3>免费版</h3>
+          <div class="price" data-month="¥0" data-year="¥0">¥0</div>
+          <ul class="list">
+            <li><i class="fa-solid fa-check"></i> 1,000 次/月</li>
+            <li><i class="fa-solid fa-check"></i> 基础接口</li>
+            <li><i class="fa-solid fa-check"></i> 社区支持</li>
+          </ul>
+          <a class="btn ghost" href="#start">立即开始</a>
+        </div>
+
+        <div class="plan highlight">
+          <div class="badge">推荐</div>
+          <h3>标准版</h3>
+          <div class="price" data-month="¥99" data-year="¥79">¥99</div>
+          <ul class="list">
+            <li><i class="fa-solid fa-check"></i> 50,000 次/月</li>
+            <li><i class="fa-solid fa-check"></i> 全部接口</li>
+            <li><i class="fa-solid fa-check"></i> 邮件与工单支持</li>
+          </ul>
+          <a class="btn primary" href="#start">选择方案</a>
+        </div>
+
+        <div class="plan">
+          <h3>专业版</h3>
+          <div class="price" data-month="¥299" data-year="¥239">¥299</div>
+          <ul class="list">
+            <li><i class="fa-solid fa-check"></i> 200,000 次/月</li>
+            <li><i class="fa-solid fa-check"></i> 高级功能与配额</li>
+            <li><i class="fa-solid fa-check"></i> 7×24 技术支持</li>
+          </ul>
+          <a class="btn ghost" href="#start">选择方案</a>
+        </div>
+
+        <div class="plan">
+          <h3>企业版</h3>
+          <div class="price" data-month="定制" data-year="定制">定制</div>
+          <ul class="list">
+            <li><i class="fa-solid fa-check"></i> 无限制调用</li>
+            <li><i class="fa-solid fa-check"></i> 私有化/专线</li>
+            <li><i class="fa-solid fa-check"></i> SLA 与顾问服务</li>
+          </ul>
+          <a class="btn white" href="#contact">联系销售</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <div class="section-head compact">
+        <h2 data-reveal="up">常见问题</h2>
+      </div>
+      <div class="faq-list" data-reveal="fade">
+        <details>
+          <summary>如何获取 API Key？</summary>
+          <p>注册并登录后，前往控制台在密钥管理中创建新的密钥。</p>
+        </details>
+        <details>
+          <summary>是否有调用速率限制？</summary>
+          <p>不同方案限制不同，超额可叠加购买或自动切换更高方案。</p>
+        </details>
+        <details>
+          <summary>支持哪些语言与SDK？</summary>
+          <p>REST 标准接口，提供 JavaScript/TypeScript、Python、Java 等示例。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div class="foot-brand">
+        <div class="brand-mark"></div>
+        <div>
+          <strong>聚合API服务平台</strong>
+          <p>浅蓝主题与视觉氛围与官网保持一致，匹配品牌风格。</p>
+        </div>
+      </div>
+      <nav class="foot-links">
+        <a href="#docs">文档</a>
+        <a href="#pricing">价格</a>
+        <a href="#contact">联系</a>
+        <a href="#status">服务状态</a>
+      </nav>
+      <div class="foot-copy">© 2024 聚合API服务平台</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
